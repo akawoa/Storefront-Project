@@ -1,0 +1,33 @@
+{
+  "name": "react-and-express-boilerplate",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "clear && concurrently 'vite' 'node server.js'",
+    "dev": "clear && concurrently 'npm run dev --prefix client' 'nodemon server.js'",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "db": "^4.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.0",
+    "react": "^18.2.0",
+    "react-content-loader": "^6.2.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.22",
+    "vite": "^2.9.0"
+  }
+}
